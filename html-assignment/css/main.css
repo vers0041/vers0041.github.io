@@ -21,7 +21,7 @@ footer {
 }
 
 /*  replace bullets w squares  */
-article h3 ul li,
+article ul li,
 li,
 li {
     list-style-type: square;
@@ -35,23 +35,21 @@ article ul li:nth-child(even) {
 /* styling navigation */
 
 /* remove bullets from navigation */
-nav ul li{
+nav ul li {
     list-style: none;
-    
+
 }
 
 /* remove underline from the links, add background & border */
-nav ul a{
+nav ul a {
     text-decoration: none;
     background-color: skyblue;
-    border-style:dotted;
+    border-style: dotted;
 }
 
 /* change hover and focus state */
 
 nav ul a:hover,
-nav ul a:focus{
+nav ul a:focus {
     background-color: cornflowerblue;
 }
-
-
