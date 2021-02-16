@@ -1,8 +1,17 @@
 /* Command/ - shortcut to add comment in css page */
 /* Adding CSS Style */
+
+/* defining to browser that font size should be 16px */
+html{
+    font-size: 16px;
+}
+
 body {
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+    /* background-postion: x-axis y-axis */
+    /* background-size: cover; */
 }
 
 h1 {
@@ -30,6 +39,8 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
 }
 
 /* Class name selector */
@@ -40,14 +51,32 @@ nav ul a {
 }
 
 /* id selector  */
+/* 0100 */
 #treatofweek {
-    background-color: orange;
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 24px;
+    font-size: 1.5rem;
+    /* em is for element's font size */
+    padding: 1em;
+    /* 1 x 24px = 24px */
+    width: 50%;
+    /* will be 50% of container element (text is 50% of it's parent) */
+}
+
+/* overwrting the background-color for nth-child list items*/
+/* 0113 */
+#treatofweek ul li:nth-child(n) {
+    background-color: transparent;
+
 }
 
 /* avoid using id for styling, use classes mostly  */
 
 .large-text {
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
 }
 
 /* Child selector - to only style 1 paragraph from article */
