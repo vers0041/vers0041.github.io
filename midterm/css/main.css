@@ -1,0 +1,22 @@
+/* CSS Style sheet */
+
+/* Defining to browser font size to be 16px */
+
+html {
+    font-size: 16px;
+}
+
+/* styling header */
+
+h1 {
+    padding-top: 90px;
+    background-image: url("../images/lone-starfish-wide.jpg");
+}
+
+img {
+    width: 100%
+}
+
+h1 {
+    color: white;
+}
