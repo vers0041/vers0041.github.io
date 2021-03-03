@@ -13,25 +13,21 @@
 <!-- ************ main body ************ -->
 
 <body>
+    <!-- *********** adding image to header *********** -->
     <header>
-        <h1>Lone Starfish</h1>
-        <!-- ************ adding image to site title ************-->
-        <img src="images/lone-starfish-wide.jpg" alt="lone starfish on ocean floor">
-
+        <div class="container">
+            <img src="images/lone-starfish-wide.jpg" alt="lone starfish on ocean floor" style="width: 100%;">
+            <div class="centered"><h1>Lone Starfish</h1></div>
+        </div>
+        
         <!-- ************ adding navigation & relative paths *********** -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="story.html">Story</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        
     </header>
 
     <!-- ************ main content of page ************ -->
@@ -82,7 +78,9 @@
         <!-- ************ Contact Form ************* -->
         <section>
             <h3>Contact to Learn More</h3>
-            <form action="thanks.html" method="post"></form>
+            <div class="contactform">
+            <form action="thanks.html" method="post">
+                
             <div>
                 <label for="fullname">Your Name</label>
                 <input type="text" id="fullname">
@@ -97,7 +95,7 @@
             </div>
 
             <div>
-                <h4>Would you like to visit the starfish?</h3>
+                <h4>Would you like to visit the starfish?</h4>
                     <label for="yes">Yes</label>
                     <input type="radio" name="past" id="yes" checked>
                     <label for="no">No</label>
@@ -105,6 +103,9 @@
                     <label for="maybe">Maybe</label>
                     <input type="radio" name="past" id="maybe">
             </div>
+            <button type="submit">SEND</button>
+        </form>
+        </div>
 
 
             </section> 
