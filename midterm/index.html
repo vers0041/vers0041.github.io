@@ -56,7 +56,8 @@
             </p>
 
             <!-- ************ Facts Section of the article ************-->
-            <section>
+            <aside>
+                <section>
                 <h3>Facts About Starfish</h3>
                 <ul>
                     <li>
@@ -73,6 +74,7 @@
                     </li>
                 </ul>
             </section>
+        </aside>
         </article>
 
         <!-- ************ Contact Form ************* -->
@@ -83,11 +85,11 @@
                 
             <div>
                 <label for="fullname">Your Name</label>
-                <input type="text" id="fullname">
+                <input type="text" id="fullname" class="contact">
             </div>
             <div>
                 <label for="youremail">Your Email</label>
-                <input type="email" id="youremail" name="youremail" required>
+                <input type="email" id="youremail" name="youremail" required class="contact">
             </div>
             <div>
                 <label for="message">Your Message</label>
@@ -96,12 +98,13 @@
 
             <div>
                 <h4>Would you like to visit the starfish?</h4>
+                <div class="radio">
                     <label for="yes">Yes</label>
                     <input type="radio" name="past" id="yes" checked>
                     <label for="no">No</label>
                     <input type="radio" name="past" id="no">
                     <label for="maybe">Maybe</label>
-                    <input type="radio" name="past" id="maybe">
+                    <input type="radio" name="past" id="maybe"></div>
             </div>
             <button type="submit">SEND</button>
         </form>
@@ -113,7 +116,7 @@
         
         <!-- ************ footer of page ************ -->
                 <footer class="site-footer">
-                    <p>Copyright &copy; Lone Starfish, 2021</p>
+                    <p> &copy; Lone Starfish, 2021</p>
                 </footer>
 
 </body>
