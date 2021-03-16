@@ -125,7 +125,7 @@ p {
 .nav-list a {
     text-decoration: none;
     color: inherit;
-    padding: 1em;
+    padding: 1em 0;
     display: block;
 }
 
@@ -227,6 +227,20 @@ footer a:hover {
         color: white;
     }
 
+    /* Main Nav */
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        /* flex: grow, shrink, base */
+        flex: 1 0 0;
+        border-bottom: none;
+        border-right: 1px solid grey;
+    }
+
+    
     /* App Section  */
 
     .app img {
@@ -237,6 +251,13 @@ footer a:hover {
 
     .app .btn {
         float: right;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
     }
 
 }
