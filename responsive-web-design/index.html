@@ -12,16 +12,14 @@
     
     <!-- Structuring Top -->
 
-    <div class="container">
         <header class="masthead">
             <h1>Responsive Web Design I</h1>
         </header>
-    </div>
 
-    <main class="content">
-        <section class="html">
+    <main>
+        <section>
             <h2>HTML Text & Semantics</h2>
-            <p>Every html document starts with a basic structure in-order for it to be valid. <strong>Simply start your html with ! TAB to add this html structuring.</strong>Once this is added, edit the "document name" and add a link to your CSS stylesheet: link rel="stylesheet" href="./css/css.stylesheet"</p>
+            <p>Every html document starts with a basic structure in-order for it to be valid. <strong>Simply start your html with ! TAB to add this html structuring.</strong> Once this is added, edit the "document name" and add a link to your CSS stylesheet: link rel="stylesheet" href="./css/css.stylesheet"</p>
             <img src="./images/html_setup.png" alt="screenshot of html setup code">
         </section>
 
@@ -42,8 +40,37 @@
             <ul>
                 <li>Page layout semantic tags are used to give specific meaning to different parts of our page, such as the main article, header of the page, the footer of the page, navigation, different sections of the page and so on</li>
                 <li>The content displayed to the user of our website which is the content we add inside the body tag</li>
-
+                <li>Header: When used as the child of the body tag will act as the master header of the page. When added inside the article tag it will act as the header of the article. </li>
+                <li>Footer: When added as child of body tag will act as footer of website. When added inside the article tag it will act as the footer for the article.</li>
+                <li>Nav: Is the navigation of the page & will contain links to other pages</li>
+                <li>Main: Primary content of the page </li>
+                <li>Article: The tag used to contain independent piece of content. This content could be shared as stand alone piece of content and will still make sense.</li>
+                <li>Section: Group related content on the same page. A section must have it's own heading.</li>
             </ul>
+            <img src="./images/html_setup.png" alt="html page layout">
+        </section>
+        <section>
+            <h2>Generic Tags</h2>
+            <p>There are two main meaningless or generic tags we use in HTML. These tags are used to mainly wrap around any content when we do not want to give any semantic meaning to the content but need a parent to style the content or add interactivity using JavaScript</p>
+            <ul> 
+                <li> div: is used to wrap around multiple child elements. Div divides the content into logical groups which will show the content on a separate line.</li>
+                <li>span: is used for single elements or short piece of content. Span shows the content inline with the rest of the content </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Text Semantics</h2>
+            <p>Text semantics tags allow us to give semantic meaning to the text we have on the page. The content of these tags is styled by the browser to visually display the text differently</p>
+            <dl>
+                <dt>Headings: We can use the h1 tag for the most important heading of the page. For the next level of heading we have h2, h3, h4, h5, and h6. The browser will style each heading differently, stating with the biggest size for h1 then h2 and so on</dt>
+                <dt>Paragraphs: For adding a paragraph of text we can use the p tag. The browser will add a space before and after the content of the paragraph</dt>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+            </dl>
         </section>
     </main>
 
