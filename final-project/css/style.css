@@ -79,6 +79,10 @@ h3 {
 	margin: 1rem;
 }
 
+h4 {
+	font-weight: bold;
+}
+
 p {
 	margin: 1rem 1rem;
 }
@@ -91,6 +95,7 @@ p {
 /* Header */
 .masthead {
 	background-color: rgb(39,39,39);
+	padding: 1rem;
 	
 }
 
@@ -112,6 +117,14 @@ nav ul li:hover {
 	color: rgb(39,39,39);
 	background-color: rgb(183,138,35);
 }
+
+nav input[type=text] {
+	padding: 0.75rem;
+	width: 80%;
+	display: block;
+}
+
+	
 
 /* Banner */
 .banner {
@@ -197,6 +210,23 @@ nav ul li:hover {
 	display: inline-block;
 	margin: 1rem;
 	font-size: 1rem;
+}
+
+/* Our Team */
+
+.team {
+	background-color: white;
+	padding: 1rem;
+}
+
+.team .employee {
+	background-color: rgb(248,229,173);
+	padding: 1rem;
+	margin: .5rem;
+}
+
+.team img {
+	width: 100%;
 }
 
 /* Footer */
