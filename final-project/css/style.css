@@ -143,6 +143,12 @@ nav ul li:hover {
 	padding: 1rem;
 }
 
+/* Our Services */
+
+.cards {
+	background-color: white;
+}
+
 /* Footer */
 
 footer {
