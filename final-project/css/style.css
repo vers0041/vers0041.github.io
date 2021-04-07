@@ -54,16 +54,21 @@ table {
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+	box-sizing: border-box;
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 body {
 	line-height: 1.5;
@@ -155,13 +160,21 @@ nav input[type=text] {
 }
 
 .banner .btn {
-	padding: 20px;
+	padding: 1rem 2rem;
 	border: 1px solid grey;
 	text-decoration: none;
 	color: inherit;
 	background-color: rgb(183,138,35);
 	display: inline-block;
+	font-size: 1rem;
+	color: black;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
 
+.banner i {
+	font-size: 1.5rem;
+	padding: .5rem;
 }
 
 /* Main */
@@ -179,6 +192,7 @@ nav input[type=text] {
 	display: block;
 	margin: auto;
 }
+
 
 /* Our Services */
 
@@ -205,6 +219,12 @@ nav input[type=text] {
 	display: inline-block;
 	margin: 1rem;
 	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.card i {
+	font-size: 1.5rem;
+	padding: .5rem;
 }
 
 /* Our Vision */
@@ -229,6 +249,12 @@ nav input[type=text] {
 	display: inline-block;
 	margin: 1rem;
 	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.vision i {
+	font-size: 1.5rem;
+	padding: .5rem;
 }
 
 /* Our Team */
@@ -240,8 +266,8 @@ nav input[type=text] {
 
 .team .employee {
 	background-color: rgb(248,229,173);
-	padding: 1rem;
 	margin: .5rem;
+	padding: 0 0 1rem 0;
 }
 
 .team img {
@@ -272,6 +298,7 @@ input[type=text], input[type=email], textarea, email {
 	display: inline-block;
 	margin: 1rem 1rem;
 	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* Hours */
