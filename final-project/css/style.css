@@ -83,6 +83,7 @@ h1 {
 	font-size: 3.5rem;
 	color: white;
 }
+/* margin:  */
 
 h2 {
 	font-size: 2.5rem;
@@ -112,7 +113,10 @@ p {
 .masthead {
 	background-color: rgb(39,39,39);
 	padding: 1rem;
-	
+}
+
+.logo {
+	background-color: #c78c06;
 }
 
 /* Navigation */
@@ -122,17 +126,16 @@ nav {
 }
 
 nav ul li a {
-	color: rgb(183,138,35);
+	color: #c78c06;
 	text-decoration: none;
 	padding: 1rem;
 	display: block;
 	text-align: center;
 }
 
-/* ?? Font does not change to dark color on hover ?? */
-nav ul li:hover {
+nav ul li a:hover {
 	color: rgb(39,39,39);
-	background-color: rgb(183,138,35);
+	background-color: #c78c06;
 }
 
 nav input[type=text] {
@@ -142,21 +145,22 @@ nav input[type=text] {
 }
 
 .masthead i {
-	color: rgb(183,138,35);
-	border: solid 1px rgb(183,138,35);
+	color: #c78c06;
+	border: solid 1px #c78c06;
 	padding: rem;
 }
 
 /* Banner */
 .banner {
-	height: 600px;
+	height: auto;
 	background: grey url("../img/main-banner.jpg") no-repeat center bottom;
 	background-size: cover;
-	padding: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .banner h1 {
-	padding-top: 250px;
+	/* padding-top: 250px; */
 }
 
 .banner .btn {
@@ -164,7 +168,7 @@ nav input[type=text] {
 	border: 1px solid grey;
 	text-decoration: none;
 	color: inherit;
-	background-color: rgb(183,138,35);
+	background-color: #c78c06;
 	display: inline-block;
 	font-size: 1rem;
 	color: black;
@@ -177,11 +181,20 @@ nav input[type=text] {
 	padding: .5rem;
 }
 
+.welcome {
+	background-color: rgba(39,39,39, 0.6);
+	padding: 1rem;
+}
+
+.welcome p {
+	color: white;
+}
+
 /* Main */
 
 /* About Section */
 .about {
-	height: 600px;
+	height: auto;
 	background-color: rgb(248,229,173);
 	float: left;
 }
@@ -198,7 +211,7 @@ nav input[type=text] {
 
 .cards {
 	background-color: white;
-	padding: 1rem 1rem ;
+	padding: 1rem 1rem;
 }
 
  .card {
@@ -230,7 +243,7 @@ nav input[type=text] {
 /* Our Vision */
 
 .vision {
-	height: 250px;
+	height: auto;
 	background: grey url("../img/vision.jpg") no-repeat center center;
 	background-size: cover;
 	padding: 1rem;
@@ -242,7 +255,7 @@ nav input[type=text] {
 
 .vision .btn {
 	padding: 20px;
-	border: 1px solid rgb(183,138,35);
+	border: 1px solid #c78c06;
 	text-decoration: none;
 	color: white;
 	background-color: rgb(39,39,39);
@@ -288,12 +301,17 @@ input[type=text], input[type=email], textarea, email {
 
 }
 
+.contacts {
+	margin: 1rem;
+}
+
+
 .contact .btn {
 	padding: 10px;
 	border: 1rem 1rem;
-	border: 1px solid rgb(183,138,35);
+	border: 1px solid #c78c06;
 	text-decoration: none;
-	color: rgb(183,138,35);
+	color: #c78c06;
 	background-color: rgb(39,39,39);
 	display: inline-block;
 	margin: 1rem 1rem;
@@ -339,7 +357,7 @@ footer {
 	margin-top: 1rem;
 	padding: 1rem 0;
 	background-color: rgb(39,39,39);
-	color: rgb(183,138,35);
+	color: #c78c06;
 }
 
 footer a {
@@ -352,5 +370,6 @@ footer a {
 	nav ul li {
 		display: inline-block;
 	}
+	
 	
 }
