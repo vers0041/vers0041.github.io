@@ -21,13 +21,15 @@
             <div class="logo"><img src="./img/logo.png" alt="star media logo" class="logo"></div>
             <nav class="main-nav">
                 <ul class="nav-list">
+                    <li><img src="./img/logo.png" alt="star media logo" class="starlogo"></li>
                     <li><a href="#" class="current">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
+                    <form action="#" class="search">
                     <input type="text" placeholder="Search..">
-                    <a class="search" href=""><i class="fas fa-search"></i></a>
+                    <button tag="submit"><i class="fas fa-search"></i></button></form>
                 </ul>
             </nav>
         </header>
@@ -50,22 +52,23 @@
 
             <!--  About Section  -->
             <section class="about">
-                <img src="./img/about-us.jpg" alt="desk">
-                <h2>About Us</h2>
+                <div class="img"><img src="./img/about-us.jpg" alt="desk"></div>
+                <div class="content"><h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quisquam modi explicabo neque
                     exercitationem commodi, animi vero porro maiores dolore at nemo. Est consectetur, facere veritatis
                     reprehenderit corporis eum. Facilis.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quisquam modi explicabo neque
                     exercitationem commodi, animi vero porro maiores dolore at nemo. Est consectetur, facere veritatis
-                    reprehenderit corporis eum. Facilis.</p>
+                    reprehenderit corporis eum. Facilis.</p></div>
             </section>
+            
 
             <!--  Our Services Section  -->
-            <div class="cards">
+            <section class="services">
                 <h2>Our Services</h2>
-                <section class="card">
-                    <img src="./img/digital.jpg" alt="laptop screen">
-                    <div class="info">
+                <div class="cards">
+                    <div class="card">
+                        <img src="./img/digital.jpg" alt="laptop screen">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa sequi hic, porro, nam
                             quis
@@ -75,9 +78,9 @@
                         <a href="#" class="btn">Digital Plans<i class="fas fa-caret-right"></i></a>
                     </div>
                 </section>
-                <section class="card">
-                    <img src="./img/marketing.jpg" alt="laptop screen">
-                    <div class="info">
+                <section class="cards">
+                    <div class="card">
+                        <img src="./img/marketing.jpg" alt="laptop screen">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa sequi hic, porro, nam
                             quis
@@ -87,9 +90,9 @@
                         <a href="#" class="btn">Marketing Plans<i class="fas fa-caret-right"></i></a>
                     </div>
                 </section>
-                <section class="card">
+                <section class="cards">
+                    <div class="card">
                     <img src="./img/video.jpg" alt="phone screen">
-                    <div class="info">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa sequi hic, porro, nam
                             quis
@@ -99,9 +102,9 @@
                         <a href="#" class="btn">Video Plans<i class="fas fa-caret-right"></i></a>
                     </div>
                 </section>
-                <section class="card">
-                    <img src="./img/web.jpg" alt="phone and notebook">
-                    <div class="info">
+                <section class="cards">
+                    <div class="card">
+                        <img src="./img/web.jpg" alt="phone and notebook">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa sequi hic, porro, nam
                             quis
@@ -111,9 +114,9 @@
                         <a href="#" class="btn">Web Plans<i class="fas fa-caret-right"></i></a>
                     </div>
                 </section>
-                <section class="card">
-                    <img src="./img/print.jpg" alt="newspaper box">
-                    <div class="info">
+                <section class="cards">
+                    <div class="card">
+                        <img src="./img/print.jpg" alt="newspaper box">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa sequi hic, porro, nam
                             quis
@@ -142,6 +145,7 @@
                     <img src="./img/john.jpg" alt="john">
                     <h3>John Doe</h3>
                     <h4>Ceo and Co-Owner</h4>
+                    <hr>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor inventore labore animi
                         quibusdam consequuntur excepturi iure sunt fuga deleniti, praesentium delectus, molestias
                         pariatur
@@ -151,6 +155,7 @@
                     <img src="./img/bob.jpg" alt="bob">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-Owner</h4>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam est odio quis dignissimos,
                         ratione
                         voluptatem impedit recusandae eius quibusdam eveniet hic tenetur voluptas necessitatibus
@@ -210,6 +215,7 @@
                 </section>
 
             </div>
+            
         </main>
 
         <!-- Footer -->
