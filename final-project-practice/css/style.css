@@ -309,8 +309,11 @@ form.search button {
 	margin: auto;
 }
 
-
 /* Our Services */
+.services {
+	padding: 1rem;
+	background-color: white;
+}
 
 .cards {
 	background-color: white;
@@ -384,7 +387,7 @@ form.search button {
 	padding: 1rem;
 }
 
-.team .employee {
+.team .employee1, .employee2 {
 	background-color: rgb(248, 229, 173);
 	margin: .5rem;
 	padding: 0 0 1rem 0; 
@@ -536,8 +539,8 @@ footer a {
 
 .services {
 	display: grid;
-	grid-template-columns: 0.2fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 0.15fr 1fr 1fr;
 	grid-template-areas: 
 	"header header header header header header"
 	"card1 card1 card1 card2 card2 card2"
@@ -548,26 +551,68 @@ footer a {
 	grid-area: header;
 }
 
-.services .cards .card:nth-child(1) {
+.services .cards:nth-child(2) {
 	grid-area: card1;
 }
 
-.services .cards .card:nth-child(2) {
+.services .cards:nth-child(3) {
 	grid-area: card2;
 }
 
-.services .cards .card:nth-child(3) {
+.services .cards:nth-child(4) {
 	grid-area: card3;
 } 
 
+.services .cards:nth-child(5) {
+	grid-area: card4;
+}
+
+.services .cards:nth-child(6) {
+	grid-area: card5;
+}
+
 /* Our Team */
+
+.team {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+	"header header"
+	"img1 bio1"
+	"img2 bio2";
+}
+
+.team h2 {
+	grid-area: header;
+}
+
+.team .employee1 {
+	grid-area: bio1;
+}
+
+.team .employee1 img {
+	grid-area: img1;
+}
+
+.team .employee2 {
+	grid-area: bio2;
+}
+
+.team .employee2 img {
+	grid-area: img2;
+}
+
+
+
 
 /* Contact Us Section */
 
 .contacts {
 	display: grid; 
+	gap: 10px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.2fr 1.5fr 0.8fr;
+	grid-template-rows: repeat (3, auto);
 	grid-template-areas: 
 	"header header"
 	"contactform location"
