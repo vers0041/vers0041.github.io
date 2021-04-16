@@ -531,9 +531,11 @@ footer a {
 		display: inline-block;
 	}
 
+	/* Search bar & Button */
 	#searchbar {
 		display: flex;
 	}
+
 
 	/* Welcome Section */
 	.welcome {
@@ -596,29 +598,32 @@ footer a {
 	grid-template-areas: 
 	"header header"
 	"img1 bio1"
-	"img2 bio2";
+	"bio2 img2";
 }
 
 .team h2 {
 	grid-area: header;
 }
 
-.team .employee1 {
-	grid-area: bio1;
+.team #img1 {
+	grid-area: img1;
+	margin-top: 0;
 }
 
-.team .employee1 img {
-	grid-area: img1;
+.team .employee1 {
+	grid-area: bio1;
+	height: auto;
+}
+
+.team #img2 {
+	grid-area: img2;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .team .employee2 {
 	grid-area: bio2;
 }
-
-.team .employee2 img {
-	grid-area: img2;
-}
-
 
 
 
