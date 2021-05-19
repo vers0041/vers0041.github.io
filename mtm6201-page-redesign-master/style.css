@@ -146,6 +146,8 @@ table {
 /* CSS Custom Styling */
 
 /* Styling navigation bar for mobile */
+
+/* block styling applied for easy use & viewing of nav options on mobile */
 #nav.nav {
     font-size: 1rem;
     box-sizing: border-box;
@@ -162,12 +164,19 @@ table {
     padding: 1rem;
 }
 
+/* hover added for user experience */
 #nav.nav a:hover {
     color: #1d3557;
     background-color: #f1faee;
 }
 
 /* Styling main section */
+
+/* Adding white background to main section */
+#main.main {
+    background-color: white;
+    Font-Family: 'Cabin', Sans-Serif;
+}
 
 /* Hello section */
 #main.main .home {
@@ -176,7 +185,111 @@ table {
     Font-Family: 'Cabin', Sans-Serif;
 }
 
-/* About Me Section */
-#main.main .about {
-    background-color: white;
+#main.main .home h1 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
+
+/* About Section */
+#main.main .about {
+    height: auto;
+    background-color: #a8dadc;
+    padding: 1rem;
+    color: #1d3557;
+    font-size: 1.5rem;
+    Font-Family: 'Cabin', Sans-Serif;
+    margin: 1rem;
+}
+
+#main.main .about h2 {
+    text-align: left;
+    color: #1d3557;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+/* Styled size of image & added background color to image incase image does not load */
+#main.main .about img {
+    width: 200px;
+    background-color: white;
+    margin: 0rem 1rem;
+}
+
+/* Contact Section */
+
+/* Added dif background color to contact section */
+#main.main .contact {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #f1faee;
+    margin: 1rem;
+}
+
+#main.main .contact h2 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+/* added styling to contact form for easy viewing & use */
+#main.main .contact-form {
+    padding: 1rem;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #1d3557;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1d3557;
+}
+
+.contact-form .contact-form-section {
+    width: 90%;
+    padding: .5rem;
+}
+
+/* Styled button */
+.contact-form button {
+    padding: 10px;
+    border: 1px solid #1d3557;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    background-color: #f1faee;
+    font-size: 1.5rem;
+}
+
+/* Styling Footer */
+footer {
+    width: auto;
+    margin-top: 1rem;
+    background-color: #1d3557;
+    color: white;
+    padding: 1rem;
+    Font-Family: 'Cabin', Sans-Serif;
+}
+
+/* ------- DESKTOP VIEW -------- */
+
+@media screen and (min-width: 760px) {
+
+    /* Navigation */
+    #nav.nav {
+        display: flex;
+    }
+
+    /* Hello Section */
+    #main.main .home {
+        width: auto;
+        margin: 1rem;
+        text-align: left;
+    }
+
+    /* About Section */
+    #main.main .about {
+        height: auto;
+        overflow: auto;
+    }
+
+    #main.main .about img {
+        width: 300px;
+        height: auto;
+        float:left;
+    }
+
+}
+
+
