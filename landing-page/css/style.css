@@ -225,16 +225,22 @@ p {
 	margin-bottom: 2rem;
 }
 
-/* Styling button, added padding to add space between text and button, added border radius for rounded edges, changed font weight to bold to add heirarchy, display in line block so it is recognized as an element */
+/* Styling button, added padding to add space between text and button, added border radius for rounded edges, changed font weight to bold to add heirarchy, display in line block so it is recognized as an element, added letter spacing for style*/
 .apply .btn {
 	width: 100%;
 	padding: 10px;
 	background-color: #57eeab;
 	border: none;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-weight: bold;
 	margin-top: 1rem;
 	display: inline-block;
+	letter-spacing: 0.05em;
+}
+
+/* added top padding to Dash terms statement for aestethic spacing */
+.check {
+	padding-top: .5rem;
 }
 
 /* Apply Now Form:  */
@@ -251,6 +257,17 @@ input[type=number] {
 	background-color: #ececec;
 }
 
+/* Used font-size to increase size of button text */
+.contact-form .btn {
+	font-size: 1.5rem;
+}
+
+
+.hours-form {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
 
 
 /* Added class to this button for easy styling, changed color, took away default underline */
@@ -268,16 +285,19 @@ footer {
 	margin: 1rem 0;
 }
 
+/* Added styling to footer "calculate" btn: border-radius to curve btn corners, increased font size*/
 footer button {
 	width: 100%;
 	padding: 5px;
 	background-color: #ff8480;
 	border: none;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-weight: bold;
 	margin: 1rem 0;
 	display: inline-block;
 	color: white;
+	font-size: 1.5rem;
+	letter-spacing: 0.05em;
 }
 
 /* Styling social media icons: used font-size so they appear larger, added padding to space out  */
@@ -294,7 +314,7 @@ footer i {
 
 /* --------- TABLET VIEW ---------- */
 
-/* Adding media query for tablet view to add custom sytling for tablet use. The following styling will be applied to <760px + */
+/* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px + */
 @media screen and (min-width: 760px) {
 	html {
 		font-size: 18px;
@@ -304,12 +324,23 @@ footer i {
 		margin: 1rem 4rem;
 	}
 
-	/* Decreased size of image so it only takes up 80% of container - added margin-l/r auto so img is centered */
+	/* Decreased size of image so it only takes up 50% of container - added margin-l/r auto so img is centered */
 	.intro img {
-		width: 80%;
+		width: 50%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	/* Adding padding left & right for contact form inputs for spacing */
+	.contact-form {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	/* aligned text in center using text-align to follow prototype formatting */
+	.contact-form p {
+		text-align: center;
 	}
 
 	/* Added extrta padding to center footer content */
@@ -329,6 +360,20 @@ footer i {
 
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 920px) {
 
+	.main {
+		max-height: 400px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.scooterimg {
+		height: auto;
+	}
+
+	.socials {
+		align-items: flex-end;
+	}
 }

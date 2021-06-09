@@ -25,14 +25,16 @@
         <main class="main">
 
             <!-- Welcome Statement Section -->
-            <section class="intro">
+            <div class="intro">
                 <h1>Want to be your own boss?</h1>
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-                <img src="images/bg-image/scooter.svg" alt="woman on scooter" class="scooterimg">
-            </section>
+            </div>
 
+                <div>
+                    <img src="images/bg-image/scooter.svg" alt="woman on scooter" class="scooterimg">
+                </div>
             <!-- Apply Now Section -->
-            <section class="apply">
+            <div class="apply">
                 <h2>Apply Now</h2>
                 <p>Enter your info below:</p>
                 <form action="#" class="contact-form" method="post">
@@ -48,37 +50,40 @@
                     <div class="contact-form-section">
                         <input class="contact-form-input" type="email" placeholder="Email Address">
                     </div>
-                    <input type="checkbox" id="checkbox" name="terms">
-                    <label for="terms">I agree to Dash terms</label>
+                    <div class="check">
+                        <input type="checkbox" id="checkbox" name="terms">
+                        <label for="checkbox">I agree to Dash terms</label>
+                    </div>
                     <button type="submit" class="btn">DRIVE WITH US</button>
-                    <p>Already applied? <a href="#" class="btn2" target="_blank">Check your application status here</a></p>
+                    <p>Already applied? <a href="#" class="btn2" target="_blank">Check your application status here</a>
+                    </p>
                 </form>
-            </section>
+            </div>
         </main>
     </div>
-        <!-- Footer -->
-        <footer>
-            <h3>See how much you can earn with Dash</h3>
-            <p>How many hours do you want to drive with us this week?</p>
-            <!-- Footer Form -->
-            <div class="form2">
+    <!-- Footer -->
+    <footer>
+        <h3>See how much you can earn with Dash</h3>
+        <p>How many hours do you want to drive with us this week?</p>
+        <!-- Footer Form -->
+        <div class="form2">
             <form action="#" method="get" class="hours-form">
                 <input id="hours" type="number" placeholder="Hours">
                 <input id="city" type="text" placeholder="City">
+                <button type="submit">CALCULATE</button>
             </form>
-            <button type="submit">CALCULATE</button>
-            </div>
-            <!-- Footer Social Media Icon Links -->
-            <div class="socials">
-                <ul>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-    
+        </div>
+        <!-- Footer Social Media Icon Links -->
+        <div class="socials">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 
 </html>
