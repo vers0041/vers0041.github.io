@@ -336,7 +336,7 @@ footer i {
 
 	/* Increased p font size */
 	p {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	input[type=text],
@@ -357,7 +357,7 @@ footer i {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 	/* Added padding around apply section */
 	.apply {
 		margin-top: 1rem;
@@ -379,22 +379,36 @@ footer i {
 		width: 15%;
 		margin-right: .5rem;
 	}
-	
+
 	.hours-form input[type=text] {
 		width: 40%;
 		margin-right: .5rem;
 	}
 
-	/* Making checkbox larger and changing default color */
+	/* Making checkbox larger and changing default color. Added position relative & top bc checkbox was not lining up with label*/
 	#checkbox {
 		height: 30px;
 		width: 30px;
 		border-radius: 60%;
 		border: 1px solid black;
+		position: relative;
+		top: 5px;
 	}
 
 	label {
 		display: inline-block;
+		padding-bottom: .25rem;
+	}
+
+	/* Decreased font size for tablet view to match prototype */
+	footer h3 {
+		font-size: 1.25rem;
+	}
+
+	/* Decreased font & margin size */
+	footer p {
+		font-size: 16px;
+		margin: 0;
 	}
 
 	footer button {
@@ -415,18 +429,68 @@ footer i {
 
 }
 
+/* ------- DESKTOP VIEW -------- */
+
 @media screen and (min-width: 920px) {
 
 	.main {
-		background-image: url("images/bg-image/scooter.svg");
-		max-height: 900px;
+		background-image: url("../images/bg-image/scooter.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 50%;
+		/* max-height: 800px; */
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+		grid-template-areas:
+			"intro . apply";
 	}
 
+	p {
+		font-size: 14px;
+	}
+
+	.scooterimg {
+		display: none;
+	}
+
+	.intro {
+		grid-area: intro;
+	}
+
+	.apply {
+		grid-area: apply;
+	}
+
+	/* Took out large margin for webview */
+	footer p {
+		margin-top: 0;
+	}
+
+	/* Used display: grid for easy styling of footer contents. Added 4 columns so the text area could span larger */
 	footer {
-		max-height: 296px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"text text . socials";
+	}
+
+	.text {
+		grid-area: text;
+	}
+
+	.socials {
+		grid-area: socials;
+		align-content: center;
+	}
+
+	.form2 {
+		align-self: flex-start;
+	}
+
+	.socials {
+		align-self: flex-end;
 	}
 
 }
