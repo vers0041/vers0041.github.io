@@ -447,7 +447,7 @@ footer i {
 	}
 
 	p {
-		font-size: 14px;
+		font-size: 20px;
 	}
 
 	.scooterimg {
@@ -480,9 +480,11 @@ footer i {
 		grid-area: text;
 	}
 
+	/* added margin top & botton to center social icons */
 	.socials {
 		grid-area: socials;
-		align-content: center;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 
 	.form2 {
