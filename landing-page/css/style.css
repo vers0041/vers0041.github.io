@@ -473,7 +473,11 @@ footer i {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
 		grid-template-areas:
-			"text text . socials";
+			"text text text socials";
+	}
+
+	footer button {
+		width: auto;
 	}
 
 	.text {
