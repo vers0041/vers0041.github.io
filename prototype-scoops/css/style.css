@@ -108,6 +108,7 @@ h3 {
     max-height: 80px;
 }
 
+/* Styling nav options */
 .main-nav {
     font-size: 16px;
     box-sizing: border-box;
@@ -115,10 +116,178 @@ h3 {
 
 .nav-list li a {
     text-decoration: none;
-    padding: .5rem;
+    color: #232731;
+    padding: .75rem;
     display: block;
     text-align: center;
 }
+
+.nav-list li a:hover {
+    background-color: rgba(251, 180, 149, 0.5);
+}
+
+/* ----- Search Bar & Button ----- */
+
+/* hiding search bar & button from mobile view */
+form.search input[type=text] {
+    display: none;
+}
+
+form.search button {
+    display: none;
+}
+
+/* ----- Promo Banner ----- */
+.promobanner {
+    height: auto;
+    background-color: rgba(198, 166, 206, 0.5);
+    padding: 1rem;
+    text-align: center;
+    border-top: solid #232731;
+    border-bottom: solid #232731;
+    border-width: thin;
+}
+
+.promobanner a {
+   color: #232731;
+}
+
+/* ----- Main ----- */
+
+/* ----- Home Page Banner ----- */
+
+/* setting image as background though css */
+.banner {
+    height: auto;
+    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+/* styling first a tag will copy & paste this styling throughout other sections */
+.banner-text a {
+    border: solid #232731;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #232731;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+}
+
+/* ----- Icons Section ------ */
+
+.icons {
+    margin: 1rem 0;
+    background-color: #FBB495;
+    padding: 2rem 6rem;
+    height: auto;
+}
+
+.cards {
+    padding: 1rem;
+}
+
+/* used padding to make icon images smaller */
+.cards img {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.cards-text {
+    text-align: center;
+}
+
+.cards-text a {
+    border: solid #232731;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #232731;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: .5rem;
+}
+
+/* ---- Home Content ----- */
+
+.home-content {
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+
+.image-container1 {
+    height: auto;
+    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+}
+
+.image-container2 {
+    height: auto;
+    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+}
+
+.image-container3 {
+    height: auto;
+    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.home-content img {
+    width: 100%;
+    padding: 0 80px;
+}
+
+.content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.home-content a {
+    border: solid #232731;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #232731;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem .5rem;
+}
+
+/* ----- Footer ----- */
+
+/* hiding part of footer in mobile view for simplification */
+.top-footer {
+    display: none;
+}
+
+.bottom-footer {
+    background-color: #232731;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+
 
 
 
