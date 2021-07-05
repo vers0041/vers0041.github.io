@@ -583,6 +583,34 @@ adding grid to footer for easy styling of elements */
     }
 }
 
+/* -*-*-*-*-*-*-* MENU PAGE -*-*-*-*-*-*-* */
+
+.menu {
+    padding: 1rem;
+}
+
+.menu h1 {
+    padding: 1rem 2rem;
+}
+
+.product-card {
+    background-color: pink;
+    padding: 1rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: 0px 40px 0px 0px;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card a {
+    color: #232731;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
 
 
 
