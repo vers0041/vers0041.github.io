@@ -79,7 +79,7 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: bold;
 }
 
@@ -181,6 +181,12 @@ form.search button {
     margin: 1rem;
 }
 
+/* added hover styling to button */
+.banner-text a:hover {
+    background-color: #232731;
+    color: #FFFFFF;
+}
+
 /* ----- Icons Section ------ */
 
 .icons {
@@ -215,6 +221,11 @@ form.search button {
     margin: .5rem;
 }
 
+.cards-text a:hover {
+    background-color: #232731;
+    color: #FFFFFF;
+}
+
 /* ---- Home Content ----- */
 
 .home-content {
@@ -234,7 +245,7 @@ form.search button {
 
 .image-container2 {
     height: auto;
-    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background: grey url("../images/ice-cream.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -243,7 +254,7 @@ form.search button {
 
 .image-container3 {
     height: auto;
-    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background: grey url("../images/blueberries.jpg") no-repeat center bottom;
     background-size: cover;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -259,7 +270,7 @@ form.search button {
     padding: 1rem;
 }
 
-.home-content a {
+.button a {
     border: solid #232731;
     border-width: 2px;
     border-radius: 20px;
@@ -268,8 +279,13 @@ form.search button {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    margin: 1rem .5rem;
+    margin: 1rem 2rem;
 }
+
+.button a:hover {
+        background-color: #232731;
+        color: #FFFFFF;
+    }
 
 /* ----- Footer ----- */
 
@@ -285,11 +301,287 @@ form.search button {
     padding: 1rem;
 }
 
+/* ---------- TABLET VIEW/ WEBVIEW --------- */
+
+/* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px */
+@media screen and (min-width: 760px) {
+
+/* increased font size for tablet view */
+    html {
+        font-size: 18px;
+    }
+
+/* changed menu styling using display:flex */
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
+/* adjusted how background image is displayed for tablet view */
+.banner {
+    background: grey url("../images/home_banner_img.jpg") no-repeat center center;
+}
+
+/* changed icon section view to appear side by side using flex*/
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.cards {
+    padding: 1rem 5rem;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container1, .image-container2, .image-container3 {
+    margin: 1rem;
+}
+
+/* decreased img width so images are styled smaller for tablet view */
+.home-content img {
+    width: 50%;
+}
+
+/* styling explore menu button to appear smaller */
+.button a {
+    display: flex;
+    align-items: center;
+}
+
+/* ----- Footer ----- */
+/* Displaying full footer content
+adding grid to footer for easy styling of elements */
+.top-footer {
+    background-color: #FFFFFF;
+    border-top: solid #232731;
+    border-width: thin;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "points nav"
+    "points socials"
+    "copyright copyright";
+}
+
+.points-section {
+    grid-area: points;
+}
+
+.footer-nav {
+    grid-area: nav;
+}
+
+.footer-socials {
+    grid-area: socials;
+}
+
+/* styling points button */
+.points-section a {
+    background-color: #232731;
+    color: #FFFFFF;
+    border: solid #232731;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+}
+
+/* added hover styling to button */
+.points-section a:hover {
+    background-color: #FFFFFF;
+    color: #232731;
+}
+
+/* styling navigation buttons of footer */
+.footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    color: #232731;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
 
 
+.footer-socials ul li {
+    display: inline;
+}
 
+.footer-socials ul li a {
+    color: #232731;
+    margin-left: 2rem;
+    font-size: 30px;
+}
+
+.footer-socials ul li a:hover {
+    color: #C6A6CE;
+}
+
+.bottom-footer {
+    grid-area: copyright;
+}
+
+.bottom-footer p {
+    font-size: 14px;
+}
+
+}
+
+/* -*-*-*-*-*-*-* ABOUT PAGE -*-*-*-*-*-*-* */
+
+.about-header h1 {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+/* used max-width to adjust size of img */
+.about-header img {
+    max-width: 100%;
+}
+
+.about-text {
+    background-color: #C4E6E6;
+    text-align: center;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-text h4 {
+    padding: 1rem 0;
+}
+
+/* ----- Icons Sections ----- */
+.icons2 {
+    background-color: #FBB495;
+    margin-top: 2rem;
+    padding: 2rem 6rem;
+    height: auto;
+}
+
+.icons2 img {
+    width: 100%;
+    padding: 0 50px;
+}
+
+/* adding animation to icons on hover */
+.icons2 img:hover {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0)
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+
+    80% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ----- Instagram Section ------ */
+
+/* styling section */
+.instagram {
+    background-color: #ACD7EC;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.instagram h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.instagram a {
+    border: solid #232731;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #232731;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: .5rem;
+}
+
+.instagram a:hover {
+    background-color: #232731;
+    color: #FFFFFF;
+}
+
+.instagram img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* --------*** ABOUT PAGE TABLET/WEBVIEW ***--------- */
+
+/* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px */
+@media screen and (min-width: 760px) {
+
+    /* Icons Section */
+    .icons2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 2rem;
+    }
+
+    .cards2 {
+        padding: 1rem 3rem;
+    }
+
+    /* Instagram Section */
+    .instagram {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "text img1 img2"
+        ". img3 .";
+    } 
+
+    .instagram .insta-button {
+        grid-area: text;
+    }
+
+    .instagram .img1 {
+        grid-area: img1;
+
+    }
+
+    .instagram .img2 {
+        grid-area: img2;
+
+    }
+
+    .instagram .img3 {
+        grid-area: img3;
+
+    }
+
+    }
+}
 
 
 
