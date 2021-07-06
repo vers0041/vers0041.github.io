@@ -101,9 +101,11 @@ h3 {
     margin: 0 auto;
 }
 
+/* -*-*-*-*-*-*- HOME PAGE -*-*-*-*-*-*- */
+
 /* ----- Navigation ----- */
 
-/* Styling logo as home buttton */
+/* Styling logo as home button */
 .logo {
     max-height: 80px;
 }
@@ -122,6 +124,7 @@ h3 {
     text-align: center;
 }
 
+/* adding hover effect for nav */
 .nav-list li a:hover {
     background-color: rgba(251, 180, 149, 0.5);
 }
@@ -152,14 +155,17 @@ form.search button {
    color: #232731;
 }
 
-/* ----- Main ----- */
+/* ----- MAIN ----- */
 
 /* ----- Home Page Banner ----- */
 
-/* setting image as background though css */
+/* setting image as background though css + added linear gradient so text is easier to read */
 .banner {
     height: auto;
-    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.05)
+      ), url("../images/home_banner-mobile.jpg") no-repeat center bottom;
     background-size: cover;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -191,7 +197,7 @@ form.search button {
 
 .icons {
     margin: 1rem 0;
-    background-color: #FBB495;
+    background-color: rgb(251, 180, 149, 0.75);
     padding: 2rem 6rem;
     height: auto;
 }
@@ -202,8 +208,12 @@ form.search button {
 
 /* used padding to make icon images smaller */
 .cards img {
-    width: 100%;
-    padding: 0 50px;
+    width: 100px;
+}
+
+/* added div around icons to align div in center */
+.iconimg {
+    text-align: center;
 }
 
 .cards-text {
@@ -230,44 +240,50 @@ form.search button {
 
 .home-content {
     margin: 1rem 0;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
 }
 
-
 .image-container1 {
-    height: auto;
-    background: grey url("../images/home_banner_img.jpg") no-repeat center bottom;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: grey url("../images/plant_based_img.jpg") no-repeat center left;
     background-size: cover;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding:2rem 1rem;
     margin-bottom: 1rem;
 }
 
 .image-container2 {
-    height: auto;
-    background: grey url("../images/ice-cream.jpg") no-repeat center center;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: grey url("../images/mood_boosting_img.jpg") no-repeat center right;
     background-size: cover;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 2rem 1rem; 
     margin-bottom: 1rem;
 }
 
 .image-container3 {
-    height: auto;
-    background: grey url("../images/blueberries.jpg") no-repeat center bottom;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: grey url("../images/thoughtful_ingredients-img.jpg") no-repeat center top;
     background-size: cover;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 2rem 1rem;
 }
 
 .home-content img {
-    width: 100%;
-    padding: 0 80px;
+    width: 100px;
 }
 
 .content {
     text-align: center;
-    padding: 1rem;
 }
 
 .button a {
@@ -277,15 +293,18 @@ form.search button {
     color: #232731;
     padding: 5px 30px;
     text-decoration: none;
-    display: flex;
     justify-content: center;
-    margin: 1rem 2rem;
 }
 
 .button a:hover {
         background-color: #232731;
         color: #FFFFFF;
     }
+
+.button {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 /* ----- Footer ----- */
 
@@ -318,22 +337,30 @@ form.search button {
     justify-content: space-evenly;
 }
 
+/* Bringing back search bar */
+form.search input[type=text] {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #232731;
+    border-radius: 50px;
+    color: black;
+    outline: none;
+    color: #23273;
+}
 
-/* adjusted how background image is displayed for tablet view */
+
+/* adjusted how background image is displayed for tablet view + added larger img size*/
 .banner {
-    background: grey url("../images/home_banner_img.jpg") no-repeat center center;
+    background: grey url("../images/home_banner-web.jpg") no-repeat center center;
 }
 
 /* changed icon section view to appear side by side using flex*/
 .icons {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 1rem;
-}
-
-.cards {
-    padding: 1rem 5rem;
 }
 
 .home-content {
@@ -341,20 +368,13 @@ form.search button {
     justify-content: space-around;
 }
 
+/* ajusted size of image boxes */
 .image-container1, .image-container2, .image-container3 {
     margin: 1rem;
+    height: 400px;
+    width: 300px;
 }
 
-/* decreased img width so images are styled smaller for tablet view */
-.home-content img {
-    width: 50%;
-}
-
-/* styling explore menu button to appear smaller */
-.button a {
-    display: flex;
-    align-items: center;
-}
 
 /* ----- Footer ----- */
 /* Displaying full footer content
