@@ -466,14 +466,13 @@ adding grid to footer for easy styling of elements */
 
 /* -*-*-*-*-*-*-* ABOUT PAGE -*-*-*-*-*-*-* */
 
+/* setting h1 to mobile background image */
+.about-header h1 {
+   background: grey url("../images/about_banner-mobile.jpg") no-repeat center top;
+}
 .about-header h1 {
     text-align: center;
     padding: 1rem 2rem;
-}
-
-/* used max-width to adjust size of img */
-.about-header img {
-    max-width: 100%;
 }
 
 .about-text {
@@ -489,7 +488,7 @@ adding grid to footer for easy styling of elements */
 
 /* ----- Icons Sections ----- */
 .icons2 {
-    background-color: #FBB495;
+    background-color: rgba(251, 180, 149, 0.5);
     margin-top: 2rem;
     padding: 2rem 6rem;
     height: auto;
@@ -518,11 +517,16 @@ adding grid to footer for easy styling of elements */
     }
 }
 
+/* explore our menu button */
+.button {
+    margin-top: 1rem;
+}
+
 /* ----- Instagram Section ------ */
 
 /* styling section */
 .instagram {
-    background-color: #ACD7EC;
+    background-color:rgb(172, 215, 236, 0.5);
     margin: 1rem 2rem;
     padding: 1rem 2rem;
     border-radius: 0px 50px 0px 0px;
@@ -540,8 +544,11 @@ adding grid to footer for easy styling of elements */
     color: #232731;
     padding: 5px 30px;
     text-decoration: none;
-    display: inline-block;
     margin: .5rem;
+}
+
+.insta-button {
+    text-align: center;
 }
 
 .instagram a:hover {
@@ -559,16 +566,25 @@ adding grid to footer for easy styling of elements */
 /* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px */
 @media screen and (min-width: 760px) {
 
+    /* setting background image to image sized for web */
+    .about-header h1 {
+        background: grey url("../images/about-banner-web.jpg") no-repeat center top;
+        height: 200px;
+     }
+
     /* Icons Section */
     .icons2 {
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 1rem 2rem;
+        justify-content: space-around;
     }
 
     .cards2 {
-        padding: 1rem 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cards2 img {
+       height: 160px;
     }
 
     /* Instagram Section */
