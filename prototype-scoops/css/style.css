@@ -645,8 +645,11 @@ adding grid to footer for easy styling of elements */
     padding-right: 1.75rem;
 }
 
+/* ajusted size & styled menu images */
 .product-card img {
   width: 100%;
+  border-radius: 0px 40px 0px 0px;;
+  padding: 1rem;
 }
 
 .menu-img {
