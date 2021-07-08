@@ -584,7 +584,7 @@ adding grid to footer for easy styling of elements */
     }
 
     .cards2 img {
-       height: 160px;
+       width: 100%;
     }
 
     /* Instagram Section */
@@ -630,26 +630,78 @@ adding grid to footer for easy styling of elements */
 }
 
 .product-card {
-    background-color: pink;
+    background-color: rgb(251, 180, 149, 0.5);
     padding: 1rem 1rem;
-    margin: 1rem 2rem;
+    margin: 2rem 4rem;
     border-radius: 0px 40px 0px 0px;
 }
 
+.product-card:nth-child(odd) {
+    background-color: rgb(198, 166, 206, 0.5);
+}
+
+.product-card p, h3 {
+    padding-left: .75rem;
+    padding-right: 1.75rem;
+}
+
 .product-card img {
-    max-width: 100%;
+  width: 100%;
+}
+
+.menu-img {
+    text-align: center;
 }
 
 .product-card a {
     color: #232731;
     font-weight: bold;
-    display: flex;
-    align-items: center;
 }
 
+/* using div to center button */
+.addbutton {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 
+hr {
+    height:1px;
+    border-width:0;
+    color:black;
+    background-color:black;
+    width: 95%;
+}
 
+/* MENU PAGE TABLET VIEW */
 
+/* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px */
+@media screen and (min-width: 760px) {
 
+    /* displaying menu items as grid for ipad */
+    .product-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* decreasing margin size in tablet */
+    .product-card {
+        margin: 1rem;
+    }
+}
+
+/* MENU PAGE WEB VIEW */
+@media screen and (min-width: 900px) {
+
+    /* displaying menu items as larger grid for webview */
+    .product-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 1rem;
+    }
+}
 
 
