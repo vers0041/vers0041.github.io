@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ---------- ^ CSS reset applied ^ ---------- */
@@ -55,31 +142,34 @@ table {
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
-	line-height: inherit;
+    box-sizing: inherit;
+    line-height: inherit;
 }
 
 /* adding to prevent future code errors */
 .clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 html {
     font-family: soleil, sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
     font-style: normal;
-	font-size: 14px;
+    font-size: 14px;
     color: #232731;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: bold;
 }
 
@@ -95,7 +185,7 @@ h3 {
     font-size: 20px;
 }
 
-/* Adding max-width to container to maintain styling on larger screens */ 
+/* Adding max-width to container to maintain styling on larger screens */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -152,7 +242,7 @@ form.search button {
 }
 
 .promobanner a {
-   color: #232731;
+    color: #232731;
 }
 
 /* ----- MAIN ----- */
@@ -162,10 +252,8 @@ form.search button {
 /* setting image as background though css + added linear gradient so text is easier to read */
 .banner {
     height: auto;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.05),
-        rgba(0, 0, 0, 0.05)
-      ), url("../images/home_banner-mobile.jpg") no-repeat center bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.05)), url("../images/home_banner-mobile.jpg") no-repeat center bottom;
     background-size: cover;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -251,7 +339,7 @@ form.search button {
     margin-right: auto;
     background: grey url("../images/plant_based_img.jpg") no-repeat center left;
     background-size: cover;
-    padding:2rem 1rem;
+    padding: 2rem 1rem;
     margin-bottom: 1rem;
 }
 
@@ -263,7 +351,7 @@ form.search button {
     margin-right: auto;
     background: grey url("../images/mood_boosting_img.jpg") no-repeat center right;
     background-size: cover;
-    padding: 2rem 1rem; 
+    padding: 2rem 1rem;
     margin-bottom: 1rem;
 }
 
@@ -297,9 +385,9 @@ form.search button {
 }
 
 .button a:hover {
-        background-color: #232731;
-        color: #FFFFFF;
-    }
+    background-color: #232731;
+    color: #FFFFFF;
+}
 
 .button {
     text-align: center;
@@ -325,142 +413,144 @@ form.search button {
 /* Adding media query for tablet view to add custom styling for tablet use. The following styling will be applied to <760px */
 @media screen and (min-width: 760px) {
 
-/* increased font size for tablet view */
+    /* increased font size for tablet view */
     html {
         font-size: 18px;
     }
 
-/* changed menu styling using display:flex */
-.nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    /* changed menu styling using display:flex */
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
-/* Bringing back search bar */
-form.search input[type=text] {
-    display: inline-block;
-    padding: 10px;
-    width: 200px;
-    height: 40px;
-    border: 2px solid #232731;
-    border-radius: 50px;
-    color: black;
-    outline: none;
-    color: #23273;
-}
-
-
-/* adjusted how background image is displayed for tablet view + added larger img size*/
-.banner {
-    background: grey url("../images/home_banner-web.jpg") no-repeat center center;
-}
-
-/* changed icon section view to appear side by side using flex*/
-.icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-}
-
-.home-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* ajusted size of image boxes */
-.image-container1, .image-container2, .image-container3 {
-    margin: 1rem;
-    height: 400px;
-    width: 300px;
-}
+    /* Bringing back search bar */
+    form.search input[type=text] {
+        display: inline-block;
+        padding: 10px;
+        width: 200px;
+        height: 40px;
+        border: 2px solid #232731;
+        border-radius: 50px;
+        color: black;
+        outline: none;
+        color: #23273;
+    }
 
 
-/* ----- Footer ----- */
-/* Displaying full footer content
+    /* adjusted how background image is displayed for tablet view + added larger img size*/
+    .banner {
+        background: grey url("../images/home_banner-web.jpg") no-repeat center center;
+    }
+
+    /* changed icon section view to appear side by side using flex*/
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .home-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* ajusted size of image boxes */
+    .image-container1,
+    .image-container2,
+    .image-container3 {
+        margin: 1rem;
+        height: 400px;
+        width: 300px;
+    }
+
+
+    /* ----- Footer ----- */
+    /* Displaying full footer content
 adding grid to footer for easy styling of elements */
-.top-footer {
-    background-color: #FFFFFF;
-    border-top: solid #232731;
-    border-width: thin;
-    padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "points nav"
-    "points socials"
-    "copyright copyright";
-}
+    .top-footer {
+        background-color: #FFFFFF;
+        border-top: solid #232731;
+        border-width: thin;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "points nav"
+            "points socials"
+            "copyright copyright";
+    }
 
-.points-section {
-    grid-area: points;
-}
+    .points-section {
+        grid-area: points;
+    }
 
-.footer-nav {
-    grid-area: nav;
-}
+    .footer-nav {
+        grid-area: nav;
+    }
 
-.footer-socials {
-    grid-area: socials;
-}
+    .footer-socials {
+        grid-area: socials;
+    }
 
-/* styling points button */
-.points-section a {
-    background-color: #232731;
-    color: #FFFFFF;
-    border: solid #232731;
-    border-width: 2px;
-    border-radius: 20px;
-    padding: 5px 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 1rem;
-}
+    /* styling points button */
+    .points-section a {
+        background-color: #232731;
+        color: #FFFFFF;
+        border: solid #232731;
+        border-width: 2px;
+        border-radius: 20px;
+        padding: 5px 30px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 1rem;
+    }
 
-/* added hover styling to button */
-.points-section a:hover {
-    background-color: #FFFFFF;
-    color: #232731;
-}
+    /* added hover styling to button */
+    .points-section a:hover {
+        background-color: #FFFFFF;
+        color: #232731;
+    }
 
-/* styling navigation buttons of footer */
-.footer-nav {
-    margin-bottom: 1rem;
-}
+    /* styling navigation buttons of footer */
+    .footer-nav {
+        margin-bottom: 1rem;
+    }
 
-.footer-nav a {
-    color: #232731;
-    margin-left: 2rem;
-    text-decoration: none;
-}
+    .footer-nav a {
+        color: #232731;
+        margin-left: 2rem;
+        text-decoration: none;
+    }
 
-.footer-nav a:hover {
-    text-decoration: underline;
-}
+    .footer-nav a:hover {
+        text-decoration: underline;
+    }
 
 
-.footer-socials ul li {
-    display: inline;
-}
+    .footer-socials ul li {
+        display: inline;
+    }
 
-.footer-socials ul li a {
-    color: #232731;
-    margin-left: 2rem;
-    font-size: 30px;
-}
+    .footer-socials ul li a {
+        color: #232731;
+        margin-left: 2rem;
+        font-size: 30px;
+    }
 
-.footer-socials ul li a:hover {
-    color: #C6A6CE;
-}
+    .footer-socials ul li a:hover {
+        color: #C6A6CE;
+    }
 
-.bottom-footer {
-    grid-area: copyright;
-}
+    .bottom-footer {
+        grid-area: copyright;
+    }
 
-.bottom-footer p {
-    font-size: 14px;
-}
+    .bottom-footer p {
+        font-size: 14px;
+    }
 
 }
 
@@ -468,8 +558,9 @@ adding grid to footer for easy styling of elements */
 
 /* setting h1 to mobile background image */
 .about-header h1 {
-   background: grey url("../images/about_banner-mobile.jpg") no-repeat center top;
+    background: grey url("../images/about_banner-mobile.jpg") no-repeat center top;
 }
+
 .about-header h1 {
     text-align: center;
     padding: 1rem 2rem;
@@ -505,9 +596,14 @@ adding grid to footer for easy styling of elements */
 }
 
 @keyframes bounce {
-    0%, 20%, 60%, 100% {
+
+    0%,
+    20%,
+    60%,
+    100% {
         transform: translateY(0)
     }
+
     40% {
         transform: translateY(-30px);
     }
@@ -526,7 +622,7 @@ adding grid to footer for easy styling of elements */
 
 /* styling section */
 .instagram {
-    background-color:rgb(172, 215, 236, 0.5);
+    background-color: rgb(172, 215, 236, 0.5);
     margin: 1rem 2rem;
     padding: 1rem 2rem;
     border-radius: 0px 50px 0px 0px;
@@ -570,12 +666,16 @@ adding grid to footer for easy styling of elements */
     .about-header h1 {
         background: grey url("../images/about-banner-web.jpg") no-repeat center top;
         height: 200px;
-     }
+    }
 
     /* Icons Section */
     .icons2 {
         display: flex;
         justify-content: space-around;
+    }
+
+    .icons2 img {
+        min-width: 200px;
     }
 
     .cards2 {
@@ -584,7 +684,7 @@ adding grid to footer for easy styling of elements */
     }
 
     .cards2 img {
-       width: 100%;
+        width: 100%;
     }
 
     /* Instagram Section */
@@ -592,10 +692,10 @@ adding grid to footer for easy styling of elements */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "text img1 img2"
-        ". img3 .";
-    } 
+        grid-template-areas:
+            "text img1 img2"
+            ". img3 .";
+    }
 
     .instagram .insta-button {
         grid-area: text;
@@ -616,7 +716,7 @@ adding grid to footer for easy styling of elements */
 
     }
 
-    }
+}
 }
 
 /* -*-*-*-*-*-*-* MENU PAGE -*-*-*-*-*-*-* */
@@ -640,16 +740,18 @@ adding grid to footer for easy styling of elements */
     background-color: rgb(198, 166, 206, 0.5);
 }
 
-.product-card p, h3 {
+.product-card p,
+h3 {
     padding-left: .75rem;
     padding-right: 1.75rem;
 }
 
 /* ajusted size & styled menu images */
 .product-card img {
-  width: 100%;
-  border-radius: 0px 40px 0px 0px;;
-  padding: 1rem;
+    width: 100%;
+    border-radius: 0px 40px 0px 0px;
+    ;
+    padding: 1rem;
 }
 
 .menu-img {
@@ -670,10 +772,10 @@ adding grid to footer for easy styling of elements */
 }
 
 hr {
-    height:1px;
-    border-width:0;
-    color:black;
-    background-color:black;
+    height: 1px;
+    border-width: 0;
+    color: black;
+    background-color: black;
     width: 95%;
 }
 
@@ -706,5 +808,3 @@ hr {
         margin: 1rem;
     }
 }
-
-
