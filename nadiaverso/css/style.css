@@ -1,0 +1,166 @@
+/* adding to prevent future code errors */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+/* adding to prevent future code errors */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #333232;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: utopia-std, serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-family: utopia-std, serif;
+    font-weight: semi-bold;
+}
+
+/* Adding max-width to container to maintain styling on larger screens */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* * * * * * HOME PAGE * * * * * */
+
+/* Top Nav */
+.logo-nav {
+    background-color: rgb(114, 125, 113, 0.36);
+}
+
+.logo-nav img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling bottom menu links to display in-line */
+ .nav-links {
+     display: flex;
+     justify-content: space-around;
+     border-bottom: 2px solid #333232;
+ }
+
+ /* Styling menu links */
+ .nav-links a {
+     text-decoration: none;
+     color: #333232;
+     list-style-type: none;
+     padding: .5rem;
+     margin: .5rem;
+ }
+
+ /* styling contact nav button  */
+ .contact {
+     background-color: #727D71;
+ }
+
+ a.contact {
+     color: #FFFFFF;
+ }
+
+ /* adding hover to nav links */
+ .nav-links a:hover {
+     border-bottom: 3px solid #333232;
+ }
+
+ /* Home Hero Section*/
+
+ .hero {
+     background-color: pink;
+ }
+
+ .hero-text {
+     padding: 2rem;
+ }
+
+ /* Welcome Section */
+ .welcome  {
+     background-color: rgb(253, 229, 231, 0.5);
+     padding: 1rem;
+ }
+
+ /* Home Portfolio Section */
+ .home-portfolio {
+     margin: 1rem;
+     display: block;
+ }
+
+ /* styling portfolio button */
+ .home-portfolio a {
+     background-color: #727D71;
+     color: #FFFFFF;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 500;
+     text-align: center;
+     padding: 15px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 60%;
+ }
+
+ /* Footer */
+ .footer {
+     background-color: #333232;
+     padding: 1rem;
+     color: #FFFFFF;
+ }
+
+ .footer-menu {
+     margin-top: 1rem;
+ }
+
+ .footer-menu a {
+     display: block;
+     margin-left: 2rem;
+     padding-bottom: .5rem;
+ }
+
+ /* styling footer menu items */
+ .footer a {
+     text-decoration: none;
+     color: #FFFFFF;
+     list-style-type: none;
+ }
+
+ .footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* styling social media icons to display inline */
+ .footer-socials {
+     display: flex;
+     padding: 1rem;
+ }
+
+ /* styling social media icons */
+ .footer-socials a {
+     padding: 0 1rem;
+     font-size: 25px;
+ }
+
+ /* styling hover */
+ .footer-socials a:hover {
+     color: #727D71;
+ }
