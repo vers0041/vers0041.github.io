@@ -47,6 +47,11 @@ h2 {
     background-color: rgb(114, 125, 113, 0.36);
 }
 
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .logo-nav img {
     padding: 1rem;
     width: 100%;
