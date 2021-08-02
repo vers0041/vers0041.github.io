@@ -43,129 +43,277 @@ h2 {
 /* * * * * * HOME PAGE * * * * * */
 
 /* Top Nav */
+/* using display flex to style top nav */
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    border-bottom: 3px solid #333232;
+}
+
 .logo-nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
     background-color: rgb(114, 125, 113, 0.36);
 }
 
 .logo {
-    width: 50%;
-    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    text-align: center;
 }
 
-.logo-nav img {
-    padding: 1rem;
+.logo img {
     width: 100%;
     height: auto;
 }
 
-/* Styling bottom menu links to display in-line */
- .nav-links {
-     display: flex;
-     justify-content: space-around;
-     border-bottom: 2px solid #333232;
- }
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
 
- /* Styling menu links */
- .nav-links a {
-     text-decoration: none;
-     color: #333232;
-     list-style-type: none;
-     padding: .5rem;
-     margin: .5rem;
- }
+/* styling menu links */
+.nav-links a {
+    text-decoration: none;
+    color: #333232;
+    list-style-type: none;
+    padding: .5rem;
+    margin: .5rem;
+}
 
- /* styling contact nav button  */
- .contact {
-     background-color: #727D71;
- }
+/* styling contact nav button  */
+.contact {
+    background-color: #727D71;
+}
 
- a.contact {
-     color: #FFFFFF;
- }
+a.contact {
+    color: #FFFFFF;
+}
 
- /* adding hover to nav links */
- .nav-links a:hover {
-     border-bottom: 3px solid #333232;
- }
+/* adding hover to nav links */
+.nav-links a:hover {
+    border-bottom: 3px solid #333232;
+}
 
- /* Home Hero Section*/
+/* Home Hero Section*/
 
- .hero {
-     background-color: pink;
- }
+/* adding background image & setting height */
+.hero {
+    width: 100%;
+    height: 188px;
+    background-image: url('/img/hero-img-mobile.jpg');
+    background-size: 100% 100%;
+}
 
- .hero-text {
-     padding: 2rem;
- }
+/* styling text - added slight text shadow to help text stand out */
+.hero-text {
+    padding: 2rem;
+    color: #333232;
+    text-shadow: white 0px 0px 10px;
+}
 
- /* Welcome Section */
- .welcome  {
-     background-color: rgb(253, 229, 231, 0.5);
-     padding: 1rem;
- }
+/* Welcome Section */
+.welcome {
+    background-color: rgb(253, 229, 231, 0.5);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "img welcome"
+                         "text text";
+}
 
- /* Home Portfolio Section */
- .home-portfolio {
-     margin: 1rem;
-     display: block;
- }
+/* setting grid areas */
+.welcome img {
+    width: 100%;
+    height: auto;
+    grid-area: img;
+}
 
- /* styling portfolio button */
- .home-portfolio a {
-     background-color: #727D71;
-     color: #FFFFFF;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-weight: 500;
-     text-align: center;
-     padding: 15px;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 60%;
- }
+/* using div to adjust image size */
+.welcome-img {
+    width: 200px;
+}
 
- /* Footer */
- .footer {
-     background-color: #333232;
-     padding: 1rem;
-     color: #FFFFFF;
- }
+/* styling welcome - h2 */
+.welcome h2 {
+    grid-area: welcome;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-style: italic;
+}
 
- .footer-menu {
-     margin-top: 1rem;
- }
+.welcome p {
+    grid-area: text;
+    padding-top: 1rem;
+}
 
- .footer-menu a {
-     display: block;
-     margin-left: 2rem;
-     padding-bottom: .5rem;
- }
+/* Home Portfolio Section */
+.home-portfolio {
+    margin: 1rem;
+    display: block;
+}
 
- /* styling footer menu items */
- .footer a {
-     text-decoration: none;
-     color: #FFFFFF;
-     list-style-type: none;
- }
+/* ? not showing as bold */
+.home-porfolio h2 {
+    font-weight: bold;
+}
 
- .footer a:hover {
-     text-decoration: underline;
- }
+/* displaying portfolio img links as block */
+.portfolio-img-links {
+    display: block;
+}
 
- /* styling social media icons to display inline */
- .footer-socials {
-     display: flex;
-     padding: 1rem;
- }
+/* resizing images */
+.portfolio-img {
+    width: 350px;
+    padding: .5rem;
+}
 
- /* styling social media icons */
- .footer-socials a {
-     padding: 0 1rem;
-     font-size: 25px;
- }
+/* centering images */
+.portfolio-img img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
- /* styling hover */
- .footer-socials a:hover {
-     color: #727D71;
- }
+/* styling portfolio button */
+.portfolio-btn a {
+    background-color: #727D71;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333232;
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+.footer-menu {
+    margin-top: 1rem;
+}
+
+.footer-menu a {
+    display: block;
+    margin-left: 2rem;
+    padding-bottom: .5rem;
+}
+
+/* styling footer menu items */
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* styling social media icons to display inline */
+.footer-socials {
+    display: flex;
+    padding: 1rem;
+}
+
+/* styling social media icons */
+.footer-socials a {
+    padding: 0 1rem;
+    font-size: 25px;
+}
+
+/* styling hover */
+.footer-socials a:hover {
+    color: #727D71;
+}
+
+/* * * * * HOME PAGE TABLET VIEW * * * * */
+
+@media screen and (min-width: 760px) {
+
+/* Navigation */
+
+/* changing style of navigation to display inline */
+    .nav {
+        background-color: rgb(114, 125, 113, 0.36);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-nav {
+        background-color: transparent;
+    }
+
+    /* ? Banner */
+    .hero {
+        height: 400px;
+        background-image: url('/img/hero-img-tablet.jpg');
+        background-size: 100% 100%;
+    }
+
+    .hero-text {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /* Welcome */
+
+    /* increasing image size on page for tablet */
+    .welcome-img {
+        width: 300px;
+    }
+
+    /* ? creating new grid rules for layout section */
+    .welcome {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: "img welcome"
+                             "img text";
+    }
+
+    .welcome img {
+        grid-template-areas: img;
+        height: auto;
+    }
+
+    .welcome h2 {
+        align-self: start;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .welcome p {
+        padding: 0;
+    }
+
+    /* Portfolio Section */
+    /* styling larger images */
+    .portfolio-img {
+        width: 700px;
+    }
+
+    /* portfolio button */
+    .portfolio-btn a {
+        width: 
+    }
+
+}
