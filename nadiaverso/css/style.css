@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     font-family: utopia-std, serif;
-    font-weight: semi-bold;
+    font-weight: bold;
 }
 
 /* Adding max-width to container to maintain styling on larger screens */
@@ -42,7 +42,8 @@ h2 {
 
 /* * * * * * HOME PAGE * * * * * */
 
-/* Top Nav */
+/* Navigation */
+
 /* using display flex to style top nav */
 .nav {
     display: flex;
@@ -99,7 +100,7 @@ a.contact {
     border-bottom: 3px solid #333232;
 }
 
-/* Home Hero Section*/
+/* Banner Section*/
 
 /* adding background image & setting height */
 .hero {
@@ -169,18 +170,16 @@ a.contact {
     display: block;
 }
 
-/* resizing images */
+/* ? resizing images & centering */
 .portfolio-img {
     width: 350px;
     padding: .5rem;
+    margin: 1rem auto;
 }
 
-/* centering images */
 .portfolio-img img {
     width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* styling portfolio button */
@@ -193,9 +192,8 @@ a.contact {
     text-align: center;
     padding: 15px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 200px;
+    margin: 1rem auto;
 }
 
 /* Footer */
@@ -245,7 +243,8 @@ a.contact {
 
 /* * * * * HOME PAGE TABLET VIEW * * * * */
 
-@media screen and (min-width: 760px) {
+/* set tablet min-width to 600px for small tablet */
+@media screen and (min-width: 600px) {
 
 /* Navigation */
 
@@ -262,14 +261,17 @@ a.contact {
         background-color: transparent;
     }
 
-    /* ? Banner */
+    /* Banner */
+
+    /* added new background image optimized for tablet & adjusted banner height */
     .hero {
         height: 400px;
         background-image: url('/img/hero-img-tablet.jpg');
         background-size: 100% 100%;
     }
 
-    .hero-text {
+    /* ? */
+    .hero-text h1 {
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -285,14 +287,9 @@ a.contact {
     .welcome {
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         grid-template-areas: "img welcome"
                              "img text";
-    }
-
-    .welcome img {
-        grid-template-areas: img;
-        height: auto;
     }
 
     .welcome h2 {
@@ -309,11 +306,61 @@ a.contact {
     /* styling larger images */
     .portfolio-img {
         width: 700px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* portfolio button */
-    .portfolio-btn a {
-        width: 
+}
+
+/* * * * * HOME PAGE DESKTOP VIEW * * * * */
+@media screen and (min-width: 1280px) {
+
+    /* Navigation */
+
+    .nav {
+        justify-content: space-between; 
+        padding: 0 2rem;
     }
 
+    /* adding space between nav options */
+    .nav-links a {
+        margin-left: 2rem;
+    }
+
+    /* Banner Section */
+
+    /* increased font size for web view */
+    h1 {
+        font-size: 50px;
+    }
+
+    /* changed background image to image optimized for webview */
+    .hero {
+        background-image: url('/img/hero-img-web.jpg');
+    }
+
+    /* ? Home Portfolio Section */
+    .portfolio-img-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "1 2"
+                             "3 4";
+    }
+
+    .portfolio-img-links .portfolio-img:nth-child(1) {
+        grid-area: 1;
+    }
+
+    .portfolio-img:nth-child(2) {
+        grid-area: 2;
+    }
+
+    .portfolio-img:nth-child(3) {
+        grid-area: 3;
+    }
+
+    .portfolio-img:nth-child(4) {
+        grid-area: 4;
+    }
 }
