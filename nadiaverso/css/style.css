@@ -34,6 +34,16 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-family: open-sans, sans-serif;
+    font-weight: bold;
+    color: #333232;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
 /* Adding max-width to container to maintain styling on larger screens */
 .container {
     max-width: 1400px;
@@ -112,7 +122,6 @@ a.contact {
 
 /* styling text - added slight text shadow to help text stand out */
 .hero-text {
-    padding: 2rem;
     color: #333232;
     text-shadow: white 0px 0px 10px;
 }
@@ -122,10 +131,10 @@ a.contact {
     background-color: rgb(253, 229, 231, 0.5);
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: .75fr 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "img welcome"
-                         "text text";
+        "text text";
 }
 
 /* setting grid areas */
@@ -146,7 +155,9 @@ a.contact {
     margin-top: auto;
     margin-bottom: auto;
     font-weight: bold;
-    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 40px;
+    padding-left: 1rem;
 }
 
 .welcome p {
@@ -160,7 +171,6 @@ a.contact {
     display: block;
 }
 
-/* ? not showing as bold */
 .home-porfolio h2 {
     font-weight: bold;
 }
@@ -170,7 +180,7 @@ a.contact {
     display: block;
 }
 
-/* ? resizing images & centering */
+/* resizing images & centering */
 .portfolio-img {
     width: 350px;
     padding: .5rem;
@@ -194,6 +204,12 @@ a.contact {
     display: block;
     width: 200px;
     margin: 1rem auto;
+}
+
+.portfolio-btn a:hover {
+    background-color: #FFFFFF;
+    color: #727D71;
+    border: 2px solid #727D71;
 }
 
 /* Footer */
@@ -246,9 +262,9 @@ a.contact {
 /* set tablet min-width to 600px for small tablet */
 @media screen and (min-width: 600px) {
 
-/* Navigation */
+    /* Navigation */
 
-/* changing style of navigation to display inline */
+    /* changing style of navigation to display inline */
     .nav {
         background-color: rgb(114, 125, 113, 0.36);
         display: flex;
@@ -265,15 +281,18 @@ a.contact {
 
     /* added new background image optimized for tablet & adjusted banner height */
     .hero {
-        height: 400px;
+        width: 100%;
+        height: 200px;
         background-image: url('/img/hero-img-tablet.jpg');
         background-size: 100% 100%;
     }
 
-    /* ? */
-    .hero-text h1 {
-        margin-top: auto;
-        margin-bottom: auto;
+    .hero-text {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     /* Welcome */
@@ -283,24 +302,30 @@ a.contact {
         width: 300px;
     }
 
-    /* ? creating new grid rules for layout section */
+    /* creating new grid rules for layout section */
     .welcome {
+        padding: 1rem 3rem;
+        gap: 20px;
         display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .75fr;
         grid-template-areas: "img welcome"
                              "img text";
     }
 
+    .welcome-img {
+        grid-area: img;
+        justify-self: end;
+    }
+
     .welcome h2 {
-        align-self: start;
-        margin-top: 0;
-        margin-bottom: 0;
+        padding: 0;
     }
 
     .welcome p {
-        padding: 0;
+        align-self: start;
     }
+
 
     /* Portfolio Section */
     /* styling larger images */
@@ -308,17 +333,17 @@ a.contact {
         width: 700px;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
 }
 
 /* * * * * HOME PAGE DESKTOP VIEW * * * * */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
     /* Navigation */
 
     .nav {
-        justify-content: space-between; 
+        justify-content: space-between;
         padding: 0 2rem;
     }
 
@@ -337,30 +362,85 @@ a.contact {
     /* changed background image to image optimized for webview */
     .hero {
         background-image: url('/img/hero-img-web.jpg');
+        height: 300px;
+        width: auto;
     }
 
-    /* ? Home Portfolio Section */
+    /* Welcome Section */
+    .welcome {
+        padding: 1rem 6rem;
+    }
+
+
+    /* Home Portfolio Section */
+
+    /* adding grid to portfolio section */
     .portfolio-img-links {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "1 2"
-                             "3 4";
+        grid-template-areas: "one two"
+            "three four";
     }
 
     .portfolio-img-links .portfolio-img:nth-child(1) {
-        grid-area: 1;
+        grid-area: one;
     }
 
     .portfolio-img:nth-child(2) {
-        grid-area: 2;
+        grid-area: two;
     }
 
     .portfolio-img:nth-child(3) {
-        grid-area: 3;
+        grid-area: three;
     }
 
     .portfolio-img:nth-child(4) {
-        grid-area: 4;
+        grid-area: four;
     }
+}
+
+/* * * * * * ABOUT PAGE * * * * * */
+
+/* ? adding background color */
+.about {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
+}
+
+h1 {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.about-img {
+    width: 145px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    padding: 1rem;
+}
+
+/* styling "let's connect" btn */
+.contact-btn a {
+    background-color: #727D71;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
 }
