@@ -374,9 +374,11 @@ a.contact {
 
     /* Home Portfolio Section */
 
-    /* adding grid to portfolio section */
+    /* ? adding grid to portfolio section */
     .portfolio-img-links {
         display: grid;
+        max-width: 100%;
+        overflow: hidden;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "one two"
@@ -401,14 +403,6 @@ a.contact {
 }
 
 /* * * * * * ABOUT PAGE * * * * * */
-
-/* ? adding background color */
-.about {
-    background: #FFFFFF;
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
-    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 20%, #C1E2C7 100%);
-}
 
 h1 {
     padding: 2rem 1rem 1rem 1rem;
@@ -443,4 +437,57 @@ h1 {
     display: block;
     width: 200px;
     margin: 1rem auto;
+}
+
+/* * * * * ABOUT PAGE TABLET VIEW * * * * */
+
+/* set tablet min-width to 600px for small tablet */
+@media screen and (min-width: 600px) { 
+
+    /* increasing size of image */
+    .about-img {
+        width: 250px;
+    }
+
+    /* changing layout to grid*/
+    
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .3fr .3fr .3fr 1fr 1fr;
+        grid-template-areas: "img h"
+                             "img pone"
+                             "img ."
+                             "education ptwo "
+                             "ux pthree" ;
+    }
+
+    .about h1 {
+        grid-area: h;
+    }
+
+    .about-img {
+        grid-area: img;
+    }
+
+    .about p:nth-child(1) {
+        grid-area: pone;
+    }
+
+    .about h3:nth-child(1) {
+        grid-area: education;
+    }
+
+    .about p:nth-child(2) {
+        grid-area: ptwo;
+    }
+
+    .about h3:nth-child(2) {
+        grid-area: ux;
+    }
+
+    .about p:nth-child(3) {
+        grid-area: pthree;
+    }
+
 }
