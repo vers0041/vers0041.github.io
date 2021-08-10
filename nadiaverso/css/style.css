@@ -314,7 +314,7 @@ a.contact {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: .25fr .75fr;
         grid-template-areas: "img welcome"
-                             "img text";
+            "img text";
     }
 
     .welcome-img {
@@ -337,8 +337,7 @@ a.contact {
         width: 700px;
         margin-left: auto;
         margin-right: auto;
-    } */
-
+    }
 }
 
 /* * * * * HOME PAGE DESKTOP VIEW * * * * */
@@ -453,7 +452,7 @@ h1 {
 /* * * * * ABOUT PAGE TABLET VIEW * * * * */
 
 /* set tablet min-width to 600px for small tablet */
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 600px) {
 
     /* increasing size of image */
     .about-img {
@@ -461,7 +460,7 @@ h1 {
     }
 
     /* changing layout to grid*/
-    
+
     .about {
         margin-top: 1rem;
         padding-left: 1rem;
@@ -475,7 +474,7 @@ h1 {
 }
 
 /* * * * * ABOUT PAGE DESKTOP VIEW * * * * */
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
 
     /* adding grid for desktop layout */
     .about {
@@ -493,7 +492,8 @@ h1 {
         grid-row-end: 3;
     }
 
-    .about h1, p {
+    .about h1,
+    p {
         text-align: left;
     }
 
@@ -515,7 +515,8 @@ h1 {
     margin: 1rem;
 }
 
-.connect h3, p {
+.connect h3,
+p {
     margin: 1rem 2rem;
 }
 
@@ -568,13 +569,13 @@ input[type=text],
 input[type=email],
 textarea,
 email {
-	width: 100%;
-	padding: .5rem;
-	border: 1px solid #333232;
-	box-sizing: border-box;
-	margin-top: 5px;
-	margin-bottom: 15px;
-	resize: vertical;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #333232;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
     border-radius: 2px;
 }
 
@@ -602,7 +603,10 @@ email {
 
 /* * * * * CONTACT PAGE  DESKTOP VIEW * * * * */
 @media screen and (min-width: 600px) {
-    .connect h3, p, .socials {
+
+    .connect h3,
+    p,
+    .socials {
         text-align: center;
     }
 }
@@ -615,5 +619,4 @@ email {
     .contactform {
         max-width: 500px;
     }
-
 }
