@@ -8,7 +8,7 @@ When first learning bootstrap I thought I would utilize it more for this assignm
 
 I had issues with my top nav for mobile. I wanted the logo to be displayed at the top while the nav link names were displayed under. I thought this could should be done with grid. After seeking help from David he guided me to use flex which resulted in less code and much easier styling between dif screen views. 
 
-As I began coding and saw my portfolio come to fruition I decided to make a couple style changes that I felt were more aesthetic and created more of my desired look. 
+As I began coding and saw my portfolio come to fruition I decided to make a couple style changes that I felt were more aesthetic and created more of my desired look. I changed up my about page - I took away the half mint green background as I didn't like how it looked and I kept mobile & tablet the same layout. 
 
 
 Resources: 
