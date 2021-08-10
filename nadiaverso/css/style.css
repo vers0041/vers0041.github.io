@@ -515,6 +515,18 @@ h1 {
     margin: 1rem;
 }
 
+.connect h3, p {
+    margin: 1rem 2rem;
+}
+
+.connect p {
+    color: #727D71;
+}
+
+.socials {
+    margin-left: 2rem;
+}
+
 .connect h4 {
     font-family: open-sans, sans-serif;
     font-size: 16px;
@@ -532,20 +544,23 @@ h1 {
 .socials a {
     padding-right: 1rem;
     font-size: 30px;
-    color: #333232;
+    color: #727D71;
 }
 
 /* adding hover to icons */
 .socials a:hover {
-    color: #727D71;
+    color: #333232;
 }
 
 /* styling contact form */
 .contactform {
-    margin-top: 2rem;
+    margin: 1rem 0;
     max-width: 350px;
     margin-right: auto;
     margin-left: auto;
+    background-color: rgb(114, 125, 113, 0.5);
+    border-radius: 5px;
+    padding: 2rem;
 }
 
 /* styling contact form inputs */
@@ -585,55 +600,20 @@ email {
     border: 2px solid #727D71;
 }
 
-
-/* * * * * CONTACT PAGE  TABLET VIEW * * * * */
+/* * * * * CONTACT PAGE  DESKTOP VIEW * * * * */
 @media screen and (min-width: 600px) {
-
-    .connect h1 {
-        text-align: left;
+    .connect h3, p, .socials {
+        text-align: center;
     }
-
-    .connect h4 {
-        text-align: left;
-        padding-left: 1rem;
-    }
-
-    .connecttext {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "email social"
-                             "temail isocial"
-                             "phone ."
-                             "tphone .";
-    }
-
-    .connecttext h3:nth-child(1) {
-        grid-area: email;
-    }
-
-    .connecttext h3:nth-child(3) {
-        grid-area: social;
-    }
-
-    .connecttext h3:nth-child(2) {
-        grid-area: phone;
-    }
-
-    .connecttext p:nth-child(1) {
-        grid-area: temail;
-    }
-
-    .connecttext p:nth-child(2) {
-        grid-area: tphone;
-    }
-
-    .connect .socials {
-        grid-area: isocial;
-    } 
+}
 
 
+/* * * * * CONTACT PAGE  DESKTOP VIEW * * * * */
+@media screen and (min-width: 1200px) {
+
+    /* increasing size of contact form */
     .contactform {
-        margin-left: 2rem;
+        max-width: 500px;
     }
+
 }
