@@ -44,6 +44,10 @@ h3 {
     letter-spacing: 2px;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /* Adding max-width to container to maintain styling on larger screens */
 .container {
     max-width: 1400px;
