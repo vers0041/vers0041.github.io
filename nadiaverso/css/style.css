@@ -281,6 +281,14 @@ a.contact {
         background-color: transparent;
     }
 
+    .welcome h2 {
+        text-align: center;
+    }
+
+    .welcome p {
+        font-size: 20px;
+    }
+
     /* Banner */
 
     /* added new background image optimized for tablet & adjusted banner height */
@@ -493,8 +501,7 @@ h1 {
         grid-row-end: 3;
     }
 
-    .about h1,
-    p {
+    .about p {
         text-align: left;
     }
 
