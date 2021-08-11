@@ -654,7 +654,57 @@ email {
 .portfolio-content a:hover {
     background-color: #FFFFFF;
     color: #727D71;
-    border: 2px solid #727D71; 
+    border: 2px solid #727D71;
 }
 
+/* * * * * * iKibble Page * * * * * */
 
+/* resizing images */
+
+.ikibble img {
+    width: 100%;
+    height: auto;
+}
+
+.ikibble img {
+    padding: 1rem;
+}
+
+/* * * * * * Tablet iKibble Page * * * * * */
+@media screen and (min-width: 600px) {
+
+    /* changing display for tablet view */
+    .ikibble {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .ikibble img {
+        padding: 2rem;
+    }
+
+}
+
+/* * * * * * Desktop iKibble Page * * * * * */
+@media screen and (min-width: 1200px) {
+
+    /* reducing image sizes */
+    .ikibbleimgs {
+        width: 350px;
+        height: auto;
+    }
+
+    .ikibble img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ikibble {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
